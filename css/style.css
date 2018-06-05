@@ -1,0 +1,696 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+* {
+  box-sizing: border-box;
+  position:relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kannada Sangam MN', 'PingFang TC', 'Noto Sans TC', 'Noto Sans';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: auto;
+}
+
+nav {
+  position: fixed;
+  /*left: 0;*/
+  /*top: 0;*/
+  width: 100%;
+  height: 48px;
+  z-index: 1000;
+  background-image: linear-gradient(-180deg, #000000 0%, rgba(0,0,0,0.8) 100%);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.50);
+  border-top: 4px solid rgb(180, 0, 0);
+}
+
+h2 {
+  display: inline-block;
+  font-family: 'Impact';
+  font-size: 20px;
+  line-height: 24px;
+  color: #C83643;
+  border-bottom: 3px solid #C83643;
+  margin: 0px 0 16px;
+}
+
+h3 {
+  font-family: 'DINCondensed-Bold';
+  font-size: 20px;
+  color: #C83643;
+  margin: 0 0 8px;
+}
+
+h4 {
+  font-family: 'DINCondensed-Bold';
+  font-size: 18px;
+  color: #C83643;
+  margin: 0 0 8px;
+}
+
+h5 {
+  font-family: 'KannadaSangamMN-Bold';
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-family: 'Kannada Sangam MN';
+  color: #4A4A4A;
+  line-height: 17px;
+  margin: 0 0 10px;
+  text-align: justify;
+  text-justify: auto;
+}
+
+a {
+  text-decoration: none;
+  height: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none
+}
+
+
+li.features-list::before {
+  content: "-"; 
+  color: red;
+  padding-right: 4px;
+}
+li.instruction-list::before {
+  content: "·"; 
+  color: red;
+  padding-right: 4px;
+}
+
+.main{
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.image-container{
+  width: 100%;
+  display: block;
+}
+
+.image-container:before{
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 50%;
+}
+
+.image-container .image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/*--------*\
+   slider 
+\*--------*/
+
+    .container-slider {
+      height: 100%;
+      /*padding-top: 80px;*/
+      /*padding-left: 24px;*/
+      /*background: #000000 url(../img/main-bg1.png) center top/ cover;*/
+    }
+
+    .description{
+      margin-top:40px;
+      color: #fff;
+      line-height: 24px;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 0px auto;
+    }
+
+    .slick-slide {
+      margin: 0px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+/*.jumbotron*/
+.jumbotron{
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 16px;
+}
+.more-jumbotron{
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 32px;
+
+}
+
+/* slider-image */
+.slider-container{
+  width: 100%;
+  display: block;
+}
+
+.slider-container:before{
+  content: "";
+  display: block;
+  width: 100%;
+  /*圖片1920x787px 網頁圖片寬width100% padding-top=787/1920=0.40 也就是40%*/
+  padding-top: 40%;
+}
+
+.slider-container .main-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 520px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-container .product-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 320px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.slider-container .image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+/*------------*\
+   end slider 
+\*------------*/
+
+
+.top{
+  padding-top: 64px;
+}
+
+.title-top{
+  padding-top: 32px;
+}
+
+.section-end {
+  margin-bottom: 20px;
+}
+
+.d-none {
+  display: none;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo img {
+  height: 44px;
+  width: auto;
+  padding: 16px 15px;
+  z-index: 1000;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px 30px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  height: 100vh;
+  transition: all 0.6s;
+  opacity: 0;
+  transform: translateY(-1%);
+  pointer-events: none;
+  border-top: 1px solid #fff;
+}
+
+.nav-item {
+  padding: 10px 0px;
+  border-bottom: 1px solid rgb(168, 168, 168);
+}
+
+.language-item{
+  padding: 10px 0px;
+}
+
+.nav-border {
+  border-bottom: none;
+}
+
+.icon img {
+  height: 26px;
+  margin: -6px 5px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-link--language::after {
+  content: "";
+  display: inline-block;
+  border: 10px solid rgb(255, 255, 255);
+  border-width: 8px 6px;
+  border-color: white transparent transparent;
+  margin: -6px 10px;
+}
+
+.page-bottom{
+  height: 58px;
+  background: url(../img/page-bottom.png) center top/ cover;
+}
+
+
+.dropdown-menu {
+  position: relative;
+}
+
+.dropdown-menu > ul {
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  transition: visibility 0.5s;
+  opacity: 0;
+}
+
+.dropdown-menu > span:focus ~ ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown-menu > div {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.dropdown-menu > span:focus ~ div {
+  display: block;
+}
+
+/*-------------*\
+   start index 
+\*-------------*/
+.catalogue{
+  height: 160px;
+  background: #000000 url(../img/CATALOGUE.jpg) center top/ cover;
+}
+.instruction{
+  height: 160px;
+  background: #000000 url(../img/INSTRUCTION-MANUAL.jpg) center top/ cover;
+}
+.contact{
+  height: 160px;
+  background: #000000 url(../img/CONTACT-US.jpg) center top/ cover;
+}
+.video{
+  height: 200px;
+  background: #000000 url(../img/video.jpg) center top/ cover;
+}
+/*------------*\
+   end index 
+\*------------*/
+
+
+/*----------------*\
+    about coido
+\*----------------*/
+
+.img-standars {
+  padding: 0 20px;
+}
+
+
+/*-------------------*\
+   product-catalogue
+\*-------------------*/
+
+.h2-catalogue {
+  margin-bottom: 0;
+}
+
+.product-button {
+  position: relative;
+}
+
+.product-button img {
+  width: 100%;
+}
+
+.product-catalogue{
+  padding-top: 32px;
+  padding-left: 32px;
+}
+
+.product-image{
+  height: 105px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.product-catalogue--title {
+  font-family: 'DINCondensed-Bold';
+  font-size: 20px;
+  color: #4A4A4A;
+}
+
+.product-catalogue--bar {
+  height: 2px;
+  background-color: rgb(199, 50, 50);
+}
+
+.tire-inflator {
+  width: 18px;
+}
+
+.air-compressor {
+  width: 20px;
+}
+
+.vacuum-cleaner {
+  width: 22px;
+}
+
+.car-and-tire-care {
+  width: 24px;
+}
+
+.hand-foot-pump {
+  width: 25px;
+}
+
+
+/*--------------------------*\
+   product-catalogue-little 
+\*--------------------------*/
+
+.pre-page-icon {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #9B9B9B;
+  border-right: 2px solid #9B9B9B;
+  transform: translate(0px, -2px) rotate(-135deg);
+}
+
+.pre-page {
+  display: inline-block;
+  font-family: 'KannadaSangamMN-Bold';
+  font-size: 14px;
+  color: #9B9B9B;
+  letter-spacing: 0;
+}
+
+.product-catalogue-little {
+  font-size: 0;
+  margin: 10px 0;
+}
+
+.product-catalogue-little img{
+  display: inline-block;
+  width: 28%;
+  padding: 5px;
+}
+
+.product-catalogue-intro {
+  display: inline-block;
+  width: 72%;
+  height: 100%;
+  padding-left: 20px;
+  transform: translateY(-30%);
+}
+
+.product-catalogue-little p {
+font-size: 12px;
+color: #9B9B9B;
+line-height: 13px;
+margin: 0;
+}
+
+
+/*----------------*\
+   product-paging
+\*----------------*/
+
+.product-list {
+  margin-top: 30px;
+}
+
+.product-paging {
+  display: inline-block;
+  width: 45%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.product-paging p {
+  text-align: justify;
+}
+
+.right {
+  float: right;
+}
+
+
+
+.product-name{
+  margin-top: 36px;
+  text-align: center;
+}
+
+/*--------*\
+    news
+\*--------*/
+
+.container-news {
+  margin-top: 30px;
+}
+
+.section-news-list {
+  margin-bottom: 30px;
+}
+.img-news-page{
+  float: right;
+  width: 50%;
+  margin: 8px 0 8px 8px;
+}
+
+/*--------*\
+    form
+\*--------*/
+
+input,textarea,select{
+  border: 1px solid #9B9B9B;
+  border-radius: 4px;
+  margin: 8px 0;
+  color: #4A4A4A;
+  padding-left: 8px;
+}
+
+input,select{
+  height: 32px;
+}
+
+.col-12{
+  width: 100%;
+}
+.col-6{
+  float: left;
+  width: 50%;
+}
+.col-4{
+  float: left;
+  width: 33.33%;
+}
+
+.form-left{
+  padding-right:4px;
+}
+
+.form-right{
+  padding-left: 4px;
+}
+
+.comments{
+  padding-top: 8px;
+}
+
+.btn{
+  width: 100%;
+  color:#fff;
+  font-family: 'Futura';
+  font-size: 20px;
+  height: 40px;
+  border:none;
+  background-image: linear-gradient(-180deg, #F7606E 0%, #A22332 61%, #A93B48 98%);
+}
+
+/*-------*\
+   漢堡包 
+\*-------*/
+
+.ham {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 58px;
+  height: 44px;
+}
+
+.ham-bar {
+  width: 20px;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -2px;
+  transition: all 0.3s;
+}
+
+.ham-bar--top {
+  transform: translateY(-5px);
+}
+
+.ham-bar--bottom {
+  transform: translateY(5px);
+}
+
+#ham-toggle:checked ~ .ham .ham-bar--top {
+  transform: rotate(45deg);
+}
+
+#ham-toggle:checked ~ .ham .ham-bar--middle {
+  opacity: 0;
+}
+
+#ham-toggle:checked ~ .ham .ham-bar--bottom {
+  transform: rotate(-45deg);
+}
+
+#ham-toggle:checked ~ .nav-list {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+
+/*----------*\
+    footer
+\*----------*/
+
+.footer-gradient {
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(-180deg, rgba(238,238,238,0.00) 0%, rgba(121,121,121,0.15) 100%);
+}
+
+.footer-anchor {
+  width: 36px;
+  height: 30px;
+  background-image: linear-gradient(-180deg, #F7606E 0%, #A22332 61%, #A93B48 98%);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  border-radius: 5px 0 0 5px;
+  position: fixed;
+  right: 0px;
+  bottom: 36px;
+}
+
+.footer-anchor-triangle i{
+  color: #fff;
+  font-size: 24px;
+  padding-left: 12px;
+  padding-top: 4px;
+}
+
+.footer-bar {
+  width: 100%;
+  height: 48px;
+  background-image: linear-gradient(-180deg, rgba(0,0,0,0.8) 0%, #000000 99%);
+}
+
+.footer-bar p {
+  color: white;
+  font-size: 11px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+}
+

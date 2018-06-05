@@ -411,10 +411,20 @@ li.instruction-list::before {
   width: 100%;
 }
 
+.product-catalogue{
+  padding-top: 32px;
+  padding-left: 32px;
+}
+
+.product-image{
+  height: 105px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 .product-catalogue--title {
-  position: absolute;
-  top: 36%;
-  left: 8%;
   font-family: 'DINCondensed-Bold';
   font-size: 20px;
   color: #4A4A4A;
@@ -423,9 +433,6 @@ li.instruction-list::before {
 .product-catalogue--bar {
   height: 2px;
   background-color: rgb(199, 50, 50);
-  position: absolute;
-  top: 54%;
-  left: 8%;
 }
 
 .tire-inflator {

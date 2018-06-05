@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>COIDO</title>
+
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+  <meta property="og:type" content="" />
+  
+	<link rel="icon" href="" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- slider -->
+  <!-- <link rel="stylesheet" href="js/slick/slick.css"> -->
+  <!-- <link rel="stylesheet" href="js/slick/slick-theme.css">  -->
+  <link rel="stylesheet" href="plugin/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="plugin/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+  
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="totop" class="main">
+    <nav>
+      <input type="checkbox" id="ham-toggle" class="d-none">
+
+      <a class="logo" href="index.html">
+        <img class="logo" src="img/logo.png" alt="COIDO">
+      </a>
+
+      <label for="ham-toggle" class="ham">
+        <div class="ham-bar ham-bar--top"></div>
+        <div class="ham-bar ham-bar--middle"></div>
+        <div class="ham-bar ham-bar--bottom"></div>
+      </label>
+
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+        <li class="nav-item "><a class="nav-link" href="product-catalogue.html">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">What's New</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+        <li class="nav-item"><a class="nav-link" href="instruction-manual.html">Instruction Manual</a></li>
+        <div class="dropdown-menu nav-item nav-border">
+          <span class="nav-link nav-link--language language-item" tabindex="0" onclick="return true">
+          <span class="icon nav-link" ><img src="img/icon-language.png" alt=""></span>
+          English
+          </span>
+          <div tabindex="0" onclick="return true"></div>
+          <ul>
+            <li class="language-item"><a class="nav-link" href="#" onclick="sampleMenu(this)">简体中文</a></li>
+            <li class="language-item"><a class="nav-link" href="#" onclick="sampleMenu(this)">繁體中文</a></li>
+          </ul>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- start jumbotron -->
+        <div id="main-jumbotron" class="jumbotron">
+          <div class="owl-carousel owl-theme slider">
+            <a href="" class="slider-container">
+              <div class="main-image" style="background-image: url('img/main-bg1.jpg')"></div>
+            </a>
+            <a href="" class="slider-container">
+              <div class="main-image" style="background-image: url('img/main-bg1.jpg')"></div>
+            </a>
+            <a href="" class="slider-container">
+              <div class="main-image" style="background-image: url('img/main-bg1.jpg')"></div>
+            </a>
+          </div>
+        </div>
+      <!-- end jumbotron -->
+
+    <div class="catalogue"></div>
+    <div class="instruction"></div>
+    <div class="contact"></div>
+    <div class="video"></div>
+
+    <footer>
+      <div class="footer-bar">
+        <a href="#totop">
+          <div class="footer-anchor">
+              <div class="footer-anchor-triangle"><i class="fas fa-angle-up"></i></div>
+          </div>
+        </a>
+        <p>© Coido Corporation. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <!-- start js -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/commen.js"></script>
+
+   <!-- slider -->
+  <script type="text/javascript" src="plugin/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+  <script>
+     //slider
+    $('.owl-carousel.slider').owlCarousel({
+        items: 1,
+        margin: 32,
+        loop: true,
+        nav: true,
+        autoplay:true,
+          autoplayTimeout:2000,
+    });
+    $('.owl-carousel').owlCarousel({
+        items: 3,
+        margin: 32,
+        loop: true,
+        nav: true,
+        autoplay:true,
+        autoplayTimeout:2000,
+    });
+
+    // 毛點跳轉動畫
+    $(document).on("click", 'a[href^="#"]', function(event) {
+      event.preventDefault();
+
+      $("html, body").animate(
+        {
+          scrollTop: $($.attr(this, "href")).offset().top
+        },
+        500
+      );
+    });
+
+  </script>
+
+</body>
+</html>

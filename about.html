@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>COIDO</title>
+
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:image" content="" />
+	<meta property="og:url" content=""/>
+  <meta property="og:type" content=""/>
+  
+	<link rel="icon" href="" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <div id="totop">
+    <nav>
+      <input type="checkbox" id="ham-toggle" class="d-none">
+
+      <a class="logo" href="index.html">
+        <img class="logo" src="img/logo.png" alt="COIDO">
+      </a>
+
+      <label for="ham-toggle" class="ham">
+        <div class="ham-bar ham-bar--top"></div>
+        <div class="ham-bar ham-bar--middle"></div>
+        <div class="ham-bar ham-bar--bottom"></div>
+      </label>
+
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+        <li class="nav-item "><a class="nav-link" href="product-catalogue.html">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">What's New</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+        <li class="nav-item"><a class="nav-link" href="instruction-manual.html">Instruction Manual</a></li>
+        <div class="dropdown-menu nav-item nav-border">
+          <span class="nav-link nav-link--language language-item" tabindex="0" onclick="return true">
+          <span class="icon nav-link" ><img src="img/icon-language.png" alt=""></span>
+          English
+          </span>
+          <div tabindex="0" onclick="return true"></div>
+          <ul>
+            <li class="language-item"><a class="nav-link" href="#" onclick="sampleMenu(this)">简体中文</a></li>
+            <li class="language-item"><a class="nav-link" href="#" onclick="sampleMenu(this)">繁體中文</a></li>
+          </ul>
+        </div>
+      </ul>
+    </nav>
+
+    <section id="anchor-top" class="container">
+      <h2 class="top">ABOUT COIDO</h2>
+      <p>For more than 50 years, Coido has manufactured quality products for both consumers and automotive industries. We o er complete range of Compressors, Tire In ators, Vacuum Cleaners and Auto Accessories. Coido is a world leader in the production of high quality air compressor and tire in ators. We will continue to bring innovative and reliable products to the market.</p>
+      <p class="section-end">We invest heavily in R&D. In designing our products, we combine comprehensive know-how and patented technology with use of the best materials to guarantee maximum quality and safety. All products are thoroughly inspected and tested to ensure the  nal results is of superior quality and meet or exceed the highest standards applicable. Coido is pioneer in developing and applying technology to bring bene ts and satisfactions to its end- user.</p>
+    
+      <h4>Manufacturing</h4>
+      <p>COIDO facility is vertical integrated. Coido design team is familiar with industry standard wand expectation. From design to manufacturing, Coido products are veri ed and made to meet the highest quality standard.</p>
+
+      <img class="img-about" src="img/about-1.jpg" alt="">
+      <img class="img-about" src="img/about-2.jpg" alt="">
+    </section>
+
+    <section class= "container top">
+      <h2>CERTIFICATION</h2>
+      <h4>Certificates obtained prove our ability and quality.</h4>
+      <p class="section-end">Coido Shanghai plant has received following certi cations:
+        <br>ISO-9001
+        <br>ISO-14001
+        <br>ISO/TS-16949
+      </p>
+
+      <h4>
+        Coido products are tested in compliance with following standards:
+        <div class="product-bar"></div>
+      </h4>
+      <img class="img-standars" src="img/about-3.png" alt="">
+    </section>
+
+    <div class="page-bottom"></div>
+
+    <footer>
+    <div class="footer-bar">
+      <a href="#totop">
+        <div class="footer-anchor">
+            <div class="footer-anchor-triangle"><i class="fas fa-angle-up"></i></div>
+        </div>
+      </a>
+      <p>© Coido Corporation. All rights reserved.</p>
+    </div>
+  </footer>
+  </div>
+
+  <!-- start js -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script>
+    // 毛點跳轉動畫
+    $(document).on("click", 'a[href^="#"]', function(event) {
+      event.preventDefault();
+
+      $("html, body").animate(
+        {
+          scrollTop: $($.attr(this, "href")).offset().top
+        },
+        500
+      );
+    });
+
+  </script>
+
+</body>
+</html>
